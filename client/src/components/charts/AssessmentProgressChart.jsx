@@ -1,41 +1,14 @@
 import React, { useContext } from 'react';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { axisClasses } from '@mui/x-charts/ChartsAxis';
-// import { ApiContext } from '../layout/MainLayout';
+import { ApiContext } from '../layout/MainLayout';
 
 function AssessmentProgressChart() {
-    // const { assessmentProgress } = useContext(ApiContext);
-    const dataset = [
-        {
-            assessment: 'Assignment',
-            completed: 60,
-            pending: 40,
-        },
-        {
-            assessment: 'Quiz',
-            completed: 80,
-            pending: 20,
-        },
-        {
-            assessment: 'Presentation',
-            completed: 55,
-            pending: 45,
-        },
-        {
-            assessment: 'Lab',
-            completed: 85,
-            pending: 15,
-        },
-        {
-            assessment: 'Viva',
-            completed: 100,
-            pending: 0,
-        },
-    ];
-    // Add a fallback if assessmentProgress is null or undefined
-    // if (!assessmentProgress || assessmentProgress.length === 0) {
-    //     return <p>Loading chart data...</p>; // You can display a loading indicator here
-    // }
+    const { assessmentProgress } = useContext(ApiContext);
+
+    if (!assessmentProgress || assessmentProgress.length === 0) {
+        return <p>Loading chart data...</p>;    
+    }
 
     const chartSetting = {
         yAxis: [
@@ -54,7 +27,7 @@ function AssessmentProgressChart() {
 
     return (
         <BarChart
-            dataset={dataset}
+            dataset={assessmentProgress}
             xAxis={[{ scaleType: 'band', dataKey: 'assessment', label: 'Assessments' }]}
             series={[
                 {
