@@ -40,7 +40,7 @@ function Course() {
                 </Box>
                 <Divider orientation='horizontal' flexItem />
                 <Box my={0.7}>
-                    <Typography mb={0.5} variant='h6' color='text.secondary'>Credits({credicts && credicts.total})</Typography>
+                    <Typography mb={0.5} variant='h6' color='text.secondary'>Credits ({credicts && credicts.total})</Typography>
                     <Typography variant='fs_13' display={'block'} >lecture - <Typography component={'span'} fontWeight={600}>{credicts && credicts.breakdown.Lecture}</Typography> </Typography>
                     <Typography variant='fs_13' display={'block'} >Tutorial - <Typography component={'span'} fontWeight={600}>{credicts && credicts.breakdown.Tutorial}</Typography> </Typography>
                     <Typography variant='fs_13' display={'block'} >Pratical - <Typography component={'span'} fontWeight={600}>{credicts && credicts.breakdown.Practical}</Typography> </Typography>

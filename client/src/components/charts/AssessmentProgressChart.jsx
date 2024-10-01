@@ -26,7 +26,7 @@ function AssessmentProgressChart() {
     };
 
     return (
-        <BarChart
+        <BarChart 
             dataset={assessmentProgress}
             xAxis={[{ scaleType: 'band', dataKey: 'assessment', label: 'Assessments' }]}
             series={[

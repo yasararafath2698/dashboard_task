@@ -33,17 +33,21 @@ function Dashboard() {
                     <Stack direction={'row'} spacing={{ xs: 1, md: 2 }} alignItems={'center'} flexWrap={'nowrap'} useFlexGap >
                         <Typography component={'span'} display={'inline-block'} width={'100%'}>Course Average Mark</Typography>
                         <Typography component={'span'} color='text.secondary' fontSize={20} fontWeight={600}>{course && course.
-courseAverageMark}</Typography>
+                            courseAverageMark}</Typography>
                     </Stack>
                 </StyledCard>
             </Stack>
             <Box my={3}>
                 <Typography mb={2} variant='h5'>Assessment Progresss</Typography>
-                <AssessmentProgressChart></AssessmentProgressChart>
+                <Box p={2} width={'fit-content'} border={'1px solid #000'} borderColor={'divider'} borderRadius={2}>
+                    <AssessmentProgressChart></AssessmentProgressChart>
+                </Box>
             </Box>
             <Box my={3}>
                 <Typography mb={2} variant='h5'>Student Attendance</Typography>
-                <AttendanceChart></AttendanceChart>
+                <Box p={2} width={'fit-content'} border={'1px solid #000'} borderColor={'divider'} borderRadius={2}>
+                    <AttendanceChart></AttendanceChart>
+                </Box>
 
             </Box>
         </Box>
