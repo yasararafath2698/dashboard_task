@@ -13,7 +13,7 @@ function MainLayout() {
     const [outcomes, setOutcomes] = useState(null);
     const [mapCourse, setMapCourse] = useState(null);
     const [assessmentProgress, setassessmentProgress] = useState(null);
-    // const [studentAttendance, setstudentAttendance] = useState(null);
+    const [studentAttendance, setstudentAttendance] = useState(null);
 
     useEffect(() => {
         axios.all([
@@ -22,16 +22,16 @@ function MainLayout() {
             axios.get('http://localhost:3004/courseOutcomes'),
             axios.get('http://localhost:3004/mappedToCourse'),
             axios.get('http://localhost:3004/assessmentProgress'),
-            // axios.get('http://localhost:3004/studentAttendance'),
+            axios.get('http://localhost:3004/studentAttendance'),
 
         ])
-            .then(axios.spread((courseInfoResponse, creditsResponse, outcomeResponse, mapCourseResponse,assessmentProgressResponse) => {
+            .then(axios.spread((courseInfoResponse, creditsResponse, outcomeResponse, mapCourseResponse,assessmentProgressResponse,studentAttendanceResponse) => {
                 setCourse(courseInfoResponse.data);
                 setCredicts(creditsResponse.data);
                 setOutcomes(outcomeResponse.data);
                 setMapCourse(mapCourseResponse.data);
                 setassessmentProgress(assessmentProgressResponse.data);
-                // setassessmentProgress(studentAttendanceResponse.data);
+                setstudentAttendance(studentAttendanceResponse.data);
 
             }))
             .catch((error) => {
@@ -49,7 +49,7 @@ function MainLayout() {
 
     return (
         <>
-            <ApiContext.Provider value={{course,credicts,outcomes,mapCourse,assessmentProgress}}>
+            <ApiContext.Provider value={{course,credicts,outcomes,mapCourse,assessmentProgress,studentAttendance}}>
                 <Box component={'section'}>
                     <Box p={2} display={'flex'} flexWrap={'wrap'} gap={2} >
                         <Box p={1.5} component={'sidebar'} width={{ xs: '100%', md: '240px' }} border={'1px solid'} borderColor={'divider'} borderRadius={2}>

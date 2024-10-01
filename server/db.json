@@ -58,21 +58,21 @@
     }
   ],
   "studentAttendance": [
-    { "id": 1, "week": "1/7", "attendance": 29 },
-    { "id": 2, "week": "8/7", "attendance": 57 },
-    { "id": 3, "week": "15/7", "attendance": 20 },
-    { "id": 4, "week": "22/7", "attendance": 84 },
-    { "id": 5, "week": "29/7", "attendance": 52 },
-    { "id": 6, "week": "5/8", "attendance": 64 },
-    { "id": 7, "week": "12/8", "attendance": 87 },
-    { "id": 8, "week": "19/8", "attendance": 58 },
-    { "id": 9, "week": "26/8", "attendance": 90 },
-    { "id": 10, "week": "2/9", "attendance": 97 },
-    { "id": 11, "week": "9/9", "attendance": 78 },
-    { "id": 12, "week": "16/9", "attendance": 55 },
-    { "id": 13, "week": "23/9", "attendance": 75 },
-    { "id": 14, "week": "30/9", "attendance": 53 },
-    { "id": 15, "week": "14/10", "attendance": 0 },
-    { "id": 16, "week": "21/10", "attendance": 0 }
-  ]
+    { "week": "1/7", "attendance": 29 },
+    { "week": "8/7", "attendance": 57 },
+    { "week": "15/7", "attendance": 20 },
+    { "week": "22/7", "attendance": 84 },
+    { "week": "29/7", "attendance": 52 },
+    { "week": "5/8", "attendance": 64 },
+    { "week": "12/8", "attendance": 87 },
+    { "week": "19/8", "attendance": 58 },
+    { "week": "26/8", "attendance": 90 },
+    { "week": "2/9", "attendance": 97 },
+    { "week": "9/9", "attendance": 78 },
+    { "week": "16/9", "attendance": 55 },
+    { "week": "23/9", "attendance": 75 },
+    { "week": "30/9", "attendance": 53 },
+    { "week": "14/10", "attendance": 10 },
+    { "week": "21/10", "attendance": 12 }
+]
 }
