@@ -1,0 +1,81 @@
+{
+  "courseInfo": {
+    "courseCode": "BA3102",
+    "courseName": "Quantitative techniques",
+    "courseType": "Program Elective",
+    "coursePeriod": "Semester - 1",
+    "totalStudents": 102,
+    "courseAverageMark": "85%"
+  },
+  "credits": {
+    "total": 4,
+    "breakdown": {
+      "Lecture": 3,
+      "Tutorial": 0,
+      "Practical": 1,
+      "Project": 0
+    }
+  },
+  "courseOutcomes": [
+    { "id": 1, "outcome": "CO2" },
+    { "id": 2, "outcome": "CO4" },
+    { "id": 3, "outcome": "CO5" },
+    { "id": 4, "outcome": "CO7" },
+    { "id": 5, "outcome": "CO13" },
+    { "id": 6, "outcome": "CO14" }
+  ],
+  "mappedToCourse": [
+    { "id": 1, "mappedTo": "PO7" },
+    { "id": 2, "mappedTo": "PO10" },
+    { "id": 3, "mappedTo": "PO12" },
+    { "id": 4, "mappedTo": "PO8" }
+  ],
+  "assessmentProgress": {
+    "Assignment": [
+      { "id": 1, "completed": 25, "pending": 0 },
+      { "id": 2, "completed": 72, "pending": 0 },
+      { "id": 3, "completed": 52, "pending": 48 },
+      { "id": 4, "completed": 100, "pending": 0 }
+    ],
+    "Quiz": [
+      { "id": 1, "completed": 92, "pending": 0 },
+      { "id": 2, "completed": 40, "pending": 0 },
+      { "id": 3, "completed": 71, "pending": 0 },
+      { "id": 4, "completed": 25, "pending": 75 },
+      { "id": 5, "completed": 80, "pending": 0 },
+      { "id": 6, "completed": 0, "pending": 100 },
+      { "id": 7, "completed": 0, "pending": 100 },
+      { "id": 8, "completed": 0, "pending": 100 }
+    ],
+    "Presentation": [
+      { "id": 1, "completed": 68, "pending": 0 },
+      { "id": 2, "completed": 40, "pending": 0 },
+      { "id": 3, "completed": 23, "pending": 0 }
+    ],
+    "Lab": [
+      { "id": 1, "completed": 48, "pending": 0 },
+      { "id": 2, "completed": 79, "pending": 0 }
+    ],
+    "Viva": [
+      { "id": 1, "completed": 92, "pending": 0 }
+    ]
+  },
+  "studentAttendance": [
+    { "id": 1, "week": "1/7", "attendance": 29 },
+    { "id": 2, "week": "8/7", "attendance": 57 },
+    { "id": 3, "week": "15/7", "attendance": 20 },
+    { "id": 4, "week": "22/7", "attendance": 84 },
+    { "id": 5, "week": "29/7", "attendance": 52 },
+    { "id": 6, "week": "5/8", "attendance": 64 },
+    { "id": 7, "week": "12/8", "attendance": 87 },
+    { "id": 8, "week": "19/8", "attendance": 58 },
+    { "id": 9, "week": "26/8", "attendance": 90 },
+    { "id": 10, "week": "2/9", "attendance": 97 },
+    { "id": 11, "week": "9/9", "attendance": 78 },
+    { "id": 12, "week": "16/9", "attendance": 55 },
+    { "id": 13, "week": "23/9", "attendance": 75 },
+    { "id": 14, "week": "30/9", "attendance": 53 },
+    { "id": 15, "week": "14/10", "attendance": null },
+    { "id": 16, "week": "21/10", "attendance": null }
+  ]
+}
