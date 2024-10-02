@@ -38,8 +38,8 @@ const AttendanceChart = () => {
                 },
             ]}
             sx={{
-                '.css-1tfmlru-MuiResponsiveChart-container': {
-                    Width: '100%',
+                '.MuiChartsAxis-label': {
+                    transform: 'translate(-10px, 0)'
                 }
 
             }}
